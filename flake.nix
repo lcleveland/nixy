@@ -1,5 +1,5 @@
 {
-  descrpition = "My NixOS flake";
+  description = "My NixOS flake";
 
   inputs = {
     home-manager = {
