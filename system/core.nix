@@ -2,6 +2,7 @@
 {
   imports = [
     /etc/nixos/hardware-configuration.nix
+    ./core/app.nix
     ./core/boot.nix
     ./core/locale.nix
     ./core/network.nix
