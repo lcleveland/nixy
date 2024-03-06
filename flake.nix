@@ -18,6 +18,15 @@
       system = "x86_64-linux";
     in
     rec {
-      nixosConfigurations = { };
+      nixosConfigurations = {
+
+        default = {
+          inherit system;
+          specialArgs = inputs;
+          modules = [
+            ./system/core.nix
+          ];
+        };
+      };
     };
 }
