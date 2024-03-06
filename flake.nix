@@ -19,7 +19,6 @@
     in
     rec {
       nixosConfigurations = {
-
         default = {
           inherit system;
           specialArgs = inputs;
