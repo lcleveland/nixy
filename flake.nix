@@ -19,7 +19,7 @@
     in
     rec {
       nixosConfigurations = {
-        default = {
+        default = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = inputs;
           modules = [
