@@ -16,6 +16,7 @@
     let
       # All config options to should be here
       system = "x86_64-linux";
+      hostname = "nixos";
     in
     rec {
       nixosConfigurations = {
