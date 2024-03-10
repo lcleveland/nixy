@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, config, ... }:
+  outputs = inputs@{ self, nixpkgs, ... }:
     let
       # All config options to should be here
       system = "x86_64-linux";
@@ -20,7 +20,6 @@
     in
     rec {
       nixosConfigurations = {
-        networking.hostName = hostname;
         plasma_sddm = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = inputs;
