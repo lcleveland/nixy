@@ -1,7 +1,9 @@
 { ... }:
 {
   services.xserver = {
-    layout = "us";
-    xkbVariant = "colemak_dh";
+    xkb = {
+      layout = "us";
+      variant = "colemak_dh";
+    };
   };
 }

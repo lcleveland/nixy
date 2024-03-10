@@ -7,6 +7,7 @@
   };
 
   home-manager.users.lcleveland = {
+    home.enableNixpkgsReleaseCheck = false;
     home.stateVersion = "23.11";
     imports = [
       ./lcleveland/config.nix
