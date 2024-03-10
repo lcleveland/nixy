@@ -23,7 +23,8 @@
           inherit system;
           specialArgs = inputs;
           modules = [
-            ./system/core.nix
+            ./system.nix
+            ./user.nix
           ];
         };
       };
