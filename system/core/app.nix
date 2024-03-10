@@ -4,5 +4,4 @@
     git
     neovim
   ];
-  services.auto-cpufreq.enable = true;
 }
