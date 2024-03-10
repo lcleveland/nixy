@@ -10,5 +10,6 @@
     ./core/state_version.nix
     ./core/time.nix
     ./core/home_manager.nix
+    ./core/unfree.nix
   ];
 }
