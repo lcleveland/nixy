@@ -20,12 +20,14 @@
     in
     rec {
       nixosConfigurations = {
-        default = nixpkgs.lib.nixosSystem {
+        plasma_sddm = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = inputs;
           modules = [
             ./system.nix
             ./user.nix
+            ./system/window_manager/kde_plasma.nix
+            ./system/login_manager/sddm.nix
           ];
         };
       };
