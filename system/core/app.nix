@@ -1,11 +1,9 @@
-{ auto-cpufreq, pkgs, ... }:
+{ pkgs, ... }:
 {
-  imports = [
-    auto-cpufreq.nixosModules.default
-  ];
   environment.systemPackages = with pkgs; [
     git
     neovim
+    auto-cpufreq
   ];
-  programs.auto-cpufreq.enable = true;
+  services.auto-cpufreq.enable = true;
 }
