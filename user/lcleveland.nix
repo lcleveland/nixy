@@ -1,6 +1,6 @@
 { ... }:
 {
-  user.users.lcleveland = {
+  users.users.lcleveland = {
     isNormalUser = true;
     description = "Lyle Cleveland";
     extraGroups = [ "wheel" "networkmanager" ];
