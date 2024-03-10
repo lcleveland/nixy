@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  home.packages = pkgs.floorp;
+  home.packages = pkgs.librewolf;
 }
