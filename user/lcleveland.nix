@@ -3,7 +3,7 @@
   users.users.lcleveland = {
     isNormalUser = true;
     description = "Lyle Cleveland";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
   };
 
   home-manager.users.lcleveland = {
