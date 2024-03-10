@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [
-    ../app/librewolf.nix
+    ../app/browser/librewolf.nix
   ];
 }
