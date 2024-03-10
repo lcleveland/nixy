@@ -12,5 +12,6 @@
     ./core/home_manager.nix
     ./core/unfree.nix
     ./core/enable_flake.nix
+    ./core/power.nix
   ];
 }
