@@ -23,6 +23,7 @@
         plasma_sddm = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = inputs;
+          networking.hostName = hostname;
           modules = [
             ./system.nix
             ./user.nix
