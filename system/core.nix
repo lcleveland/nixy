@@ -13,5 +13,6 @@
     ./core/unfree.nix
     ./core/enable_flake.nix
     ./core/power.nix
+    ./core/bluetooth.nix
   ];
 }
