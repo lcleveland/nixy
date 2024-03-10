@@ -5,5 +5,6 @@
     ../app/teams.nix
     ../app/pentest/caido.nix
     ../app/terminal/kitty.nix
+    ../app/terminal/fish.nix
   ];
 }
