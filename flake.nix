@@ -20,6 +20,7 @@
     in
     rec {
       nixosConfigurations = {
+        networking.hostName = hostname;
         plasma_sddm = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = inputs;
@@ -29,7 +30,6 @@
             ./system/window_manager/kde_plasma.nix
             ./system/login_manager/sddm.nix
           ];
-          networking.hostName = hostname;
         };
       };
     };
