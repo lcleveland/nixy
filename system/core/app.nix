@@ -4,5 +4,6 @@
     git
     neovim
     blueman
+    bluez
   ];
 }
