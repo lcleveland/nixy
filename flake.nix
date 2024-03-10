@@ -23,13 +23,13 @@
         plasma_sddm = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = inputs;
-          networking.hostName = hostname;
           modules = [
             ./system.nix
             ./user.nix
             ./system/window_manager/kde_plasma.nix
             ./system/login_manager/sddm.nix
           ];
+          networking.hostName = hostname;
         };
       };
     };
