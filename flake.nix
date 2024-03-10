@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, ... }:
+  outputs = inputs@{ self, nixpkgs, config, ... }:
     let
       # All config options to should be here
       system = "x86_64-linux";
